@@ -10,7 +10,6 @@
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
-\usepackage{marvosym}
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{xcolor}
 \usepackage{verbatim}
@@ -21,7 +20,6 @@
 \usepackage{tabularx}
 \input{glyphtounicode}
 \usepackage{fontawesome5}
-\usepackage{lmodern}
 
 \renewcommand{\familydefault}{\sfdefault}
 
@@ -89,6 +87,16 @@
     \faHome~Alexandria, Egypt $|$ \faEnvelope~\href{mailto:mu7ammadsa3dd@gmail.com}{mu7ammadsa3dd@gmail.com}
 \end{center}
 
+%-----------PROFILE-----------
+\section{Profile}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+        Experienced Software Engineer specializing in event-driven architectures, event sourcing, and CQRS patterns. 
+        Proficient in full-stack development with expertise in TypeScript, F\#, and modern frontend frameworks. 
+        Passionate about Clean Architecture, Domain-Driven Design, and building scalable distributed systems.
+    }}
+\end{itemize}
+
 %-----------EDUCATION-----------
 \section{Education}
 \resumeSubHeadingListStart
@@ -102,7 +110,19 @@
 \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Backend Developer}{\textcolor{gray}{Nov 2024 -- Present}}
+      {Software Engineer}{\textcolor{gray}{Jul 2025 -- Present}}
+      {@Bytes Maestros}{Stockholm County, Sweden (Remote)}
+      \resumeItemListStart
+        \resumeItem{Developed an e-commerce platform from scratch using TypeScript and SvelteKit with Clean Architecture and Domain-Driven Design, implementing event-driven microservices.}
+        \resumeItem{Built event-sourced systems using NATS JetStream and PostgreSQL event stores with CQRS pattern, implementing event consumers for order management, product catalog, and marketing features.}
+        \resumeItem{Developed SvelteKit frontends with TailwindCSS, Storybook component library, and comprehensive testing (Vitest, Playwright), including internationalization support.}
+        \resumeItem{Built a B2B SaaS restaurant management system using F\# and .NET 10 with Oxpecker web framework, applying Functional Core Imperative Shell pattern and schema-first API design with JSON Schema TypeProviders.}
+        \resumeItem{Designed and implemented PostgreSQL databases with Kysely query builder, type-safe migrations, optimistic concurrency control, and multi-tenancy support.}
+        \resumeItem{Implemented observability-first architecture with causation/correlation IDs for distributed tracing, type-safe validation using Zod and functional programming patterns.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Backend Developer}{\textcolor{gray}{Nov 2024 -- Jun 2025}}
       {@Techno Island, Software House}{Maadi, Cairo}
       \resumeItemListStart
         \resumeItem{Developed 3 modules from scratch for the \emph{E-Clinic} SaaS application.}
@@ -155,12 +175,16 @@
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: C\#, SQL, C++} \\
-     \textbf{Frameworks}{: ASP.NET Core, Entity Framework Core, Dapper, LINQ} \\
+     \textbf{Languages}{: C\#, F\#, TypeScript, SQL} \\
+     \textbf{Frameworks}{: ASP.NET Core, .NET 10, Entity Framework Core, Dapper, LINQ, Oxpecker, SvelteKit } \\
+     \textbf{Frontend}{: Svelte, TailwindCSS, Flowbite, Vite, Google Maps API, Storybook} \\
      \textbf{Databases}{: Microsoft SQL Server, PostgreSQL, MongoDB} \\
-     \textbf{Methodologies}{: Domain-Driven Design, Modular Monolith, OOP, SOLID Principles, RESTful API Design, ERD Design, CQRS} \\
-     \textbf{Developer Tools}{: Git, GitHub, Docker, Azure Boards, Rider} \\
-     \textbf{Libraries}{: Hangfire, FluentResults, RabbitMQ, MassTransit, CAP, MediatR}
+     \textbf{Event Streaming \& Messaging}{: NATS JetStream, RabbitMQ, MassTransit} \\
+     \textbf{ORM/Query Builders}{: Kysely, Entity Framework Core, Dapper, Npgsql.FSharp} \\
+     \textbf{Methodologies}{: Clean Architecture, Domain-Driven Design, Event Sourcing, CQRS, Functional Core Imperative Shell, Modular Monolith, OOP, SOLID Principles, RESTful API Design, Schema-First API Design, ERD Design, Event-Driven Architecture, Multi-tenancy} \\
+     \textbf{Developer Tools}{: Git, GitHub, Docker, Docker Compose, Azure Boards, Rider, pnpm, Moon Build System} \\
+     \textbf{Testing}{: Expecto, Faqt, XUnit} \\
+     \textbf{Libraries \& Tools}{: Hangfire, FluentResults, Zod, Serilog, Sentry, Better Auth, Inlang/Paraglide}
     }}
 \end{itemize}
 
