@@ -47,27 +47,27 @@
 
 \pdfgentounicode=1
 
-\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-3pt}}}}
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
   \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
     \textbf{#1} & #2 \\
     \textit{\small#3} & \textit{\small #4} \\
-  \end{tabular*}\vspace{-7pt}
+  \end{tabular*}\vspace{-8pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-8pt}
 }
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -77,9 +77,9 @@
 %----------HEADING----------
 \begin{center}
     \textbf{\Huge Muhammad Saad Ibrahim} \\
-    \vspace{6pt}
-    {\textbf{\LARGE Software Engineer}} \\
     \vspace{4pt}
+    {\textbf{\LARGE Software Engineer}} \\
+    \vspace{2pt}
     \small
     \faPhone~+201156996498 $|$ 
     \faLinkedin~\href{https://linkedin.com/in/muhammad-saad-ibrahim}{linkedin.com/in/muhammad-saad-ibrahim} $|$
@@ -87,22 +87,12 @@
     \faHome~Alexandria, Egypt $|$ \faEnvelope~\href{mailto:mu7ammadsa3dd@gmail.com}{mu7ammadsa3dd@gmail.com}
 \end{center}
 
-%-----------PROFILE-----------
-\section{Profile}
-\begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-        Experienced Software Engineer specializing in event-driven architectures, event sourcing, and CQRS patterns. 
-        Proficient in full-stack development with expertise in TypeScript, F\#, and modern frontend frameworks. 
-        Passionate about Clean Architecture, Domain-Driven Design, and building scalable distributed systems.
-    }}
-\end{itemize}
-
 %-----------EDUCATION-----------
 \section{Education}
 \resumeSubHeadingListStart
     \resumeSubheading
       {Kafrelsheikh University}{Egypt}
-      {Bachelor's Degree in Computer Science – Information Systems Department, CGPA: 2.95}{\textcolor{gray}{Aug 2020 -- June 2024}}
+      {Bachelor's Degree in Computer Science – Information Systems}{\textcolor{gray}{Aug 2020 -- June 2024}}
 \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------
@@ -113,23 +103,18 @@
       {Software Engineer}{\textcolor{gray}{Jul 2025 -- Present}}
       {@Bytes Maestros, Product-Based}{Stockholm County, Sweden (Remote)}
       \resumeItemListStart
-        \resumeItem{Developed an e-commerce platform from scratch using TypeScript and SvelteKit with Clean Architecture and Domain-Driven Design, implementing event-driven microservices.}
-        \resumeItem{Built event-sourced systems using NATS JetStream and PostgreSQL event stores with CQRS pattern, implementing event consumers for order management, product catalog, and marketing features.}
-        \resumeItem{Developed SvelteKit frontends with TailwindCSS, Storybook component library, and comprehensive testing (Vitest, Playwright), including internationalization support.}
-        \resumeItem{Built a B2B SaaS restaurant management system using F\# and .NET 10 with Oxpecker web framework, applying Functional Core Imperative Shell pattern and schema-first API design with JSON Schema TypeProviders.}
-        \resumeItem{Designed and implemented PostgreSQL databases with Kysely query builder, type-safe migrations, optimistic concurrency control, and multi-tenancy support.}
-        \resumeItem{Implemented observability-first architecture with causation/correlation IDs for distributed tracing, type-safe validation using Zod and functional programming patterns.}
+        \resumeItem{Developed e-commerce platform and B2B SaaS restaurant management system using TypeScript, F\#, and .NET 10 with Clean Architecture, DDD, and event-driven microservices.}
+        \resumeItem{Built event-sourced systems with NATS JetStream and PostgreSQL event stores using CQRS, implementing event consumers for order management, product catalog, and marketing features.}
+        \resumeItem{Developed SvelteKit frontends with TailwindCSS, Storybook, and comprehensive testing. Built RESTful APIs with Oxpecker following schema-first design and Functional Core Imperative Shell pattern.}
+        \resumeItem{Designed PostgreSQL databases with Kysely, type-safe migrations, optimistic concurrency control, and multi-tenancy. Implemented observability-first architecture with distributed tracing.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Backend Developer}{\textcolor{gray}{Nov 2024 -- Jun 2025}}
       {@Techno Island, Software House}{Maadi, Cairo}
       \resumeItemListStart
-        \resumeItem{Developed 3 modules from scratch for the \emph{E-Clinic} SaaS application.}
-        \resumeItem{Developed 6 modules from scratch for the \emph{NewLoanz} third-party banking CRM system.}
-        \resumeItem{Worked on the Transactions Allocation background job and managed the Promises to Pay workflow.}
-        \resumeItem{Integrated the \emph{NewLoanz} API with internal and external jobs to process CSV files from the Core Banking System (CBS).}
-        \resumeItem{Integrated an online API to retrieve daily currency exchange rates.}
+        \resumeItem{Developed 9 modules from scratch for \emph{E-Clinic} SaaS and \emph{NewLoanz} banking CRM systems.}
+        \resumeItem{Worked on Transactions Allocation background jobs, Promises to Pay workflow, and integrated APIs for CSV processing and currency exchange rates.}
         \resumeItem{Analyzed user stories, BRD documents, and Figma designs to gather requirements.}
       \resumeItemListEnd
 
@@ -152,22 +137,16 @@
         {\textbf{Custom Shell} $|$ \emph{Codecrafters Challenge} 
         \href{https://github.com/MuhammadSaadd/codecrafters-shell-csharp/tree/master}{\faGithub}}{\textcolor{gray}{May 2025}}
         \resumeItemListStart
-          \resumeItem{Developed a custom shell in C\# as part of the Codecrafters challenge.}
-          \resumeItem{Implemented core built-in commands (echo, pwd, exit, type) and support for external commands via environment variables.}
-          \resumeItem{Enabled directory navigation with \texttt{cd} and implemented robust quoting (single, double, and escape characters).}
-          \resumeItem{Added output/error redirection (including append mode) and advanced command auto-completion.}
-          \resumeItem{Built modular components: custom input reader (Tab, Backspace, Enter), state machine tokenizer, token parser, and a unified command executor.}
+          \resumeItem{Developed a custom shell in C\# with core built-in commands, external command support, directory navigation, and robust quoting.}
+          \resumeItem{Implemented output/error redirection, command auto-completion, and modular components including state machine tokenizer and command executor.}
         \resumeItemListEnd
 
     \resumeProjectHeading
         {\textbf{Teams Maker} $|$ \emph{Graduation Project} 
         \href{https://github.com/TeamsMaker-Backend/TeamsMaker}{\faGithub}}{\textcolor{gray}{June 2024}}
         \resumeItemListStart
-          \resumeItem{Led a team of nine developers, ensuring smooth collaboration and efficient workflows.}
-          \resumeItem{Developed a robust backend with ASP.NET Core, creating over 70 APIs for mobile and web clients.}
-          \resumeItem{Designed a comprehensive ERD with 20+ tables, following best practices in database design.}
-          \resumeItem{Analyzed client needs to ensure the project met all requirements.}
-          \resumeItem{\textit{Technologies: ASP.NET 8 Web APIs, EF Core, Microsoft SQL Server, Docker, Swagger.}}
+          \resumeItem{Led a team of nine developers and developed a robust backend with ASP.NET Core, creating over 70 APIs for mobile and web clients.}
+          \resumeItem{Designed comprehensive ERD with 20+ tables and analyzed client requirements. \textit{Technologies: ASP.NET 8, EF Core, SQL Server, Docker.}}
         \resumeItemListEnd
 \resumeSubHeadingListEnd
 
@@ -181,17 +160,17 @@
      \textbf{Databases}{: Microsoft SQL Server, PostgreSQL, MongoDB} \\
      \textbf{Event Streaming \& Messaging}{: NATS JetStream, RabbitMQ, MassTransit} \\
      \textbf{ORM/Query Builders}{: Kysely, Entity Framework Core, Dapper, Npgsql.FSharp} \\
-     \textbf{Methodologies}{: Clean Architecture, Domain-Driven Design, Event Sourcing, CQRS, Functional Core Imperative Shell, Modular Monolith, OOP, SOLID Principles, RESTful API Design, Schema-First API Design, ERD Design, Event-Driven Architecture, Multi-tenancy} \\
+     \textbf{Methodologies}{: Clean Architecture, DDD, Event Sourcing, CQRS, Functional Core Imperative Shell, OOP, SOLID, RESTful APIs, Schema-First Design, Event-Driven Architecture} \\
      \textbf{Developer Tools}{: Git, GitHub, Docker, Docker Compose, Azure Boards, Rider, pnpm, Moon Build System} \\
-     \textbf{Testing}{: Expecto, Faqt, XUnit} \\
+     \textbf{Testing}{: Expecto, Faqt, Vitest, XUnit} \\
      \textbf{Libraries \& Tools}{: Hangfire, FluentResults, Zod, Serilog, Sentry, Better Auth, Inlang/Paraglide}
     }}
 \end{itemize}
 
 %-----------CERTIFICATES-----------
-\section{Certificates}
-\resumeItemListStart
-    \resumeItem{ACM ECPC Contest: Qualified for the ECPC Finals in the 2023 season after securing second place in the university qualification round.}
-\resumeItemListEnd
+% \section{Certificates}
+% \resumeItemListStart
+%     \resumeItem{ACM ECPC Contest: Qualified for the ECPC Finals in the 2023 season after securing second place in the university qualification round.}
+% \resumeItemListEnd
 
 \end{document}
