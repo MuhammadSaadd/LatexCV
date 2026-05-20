@@ -63,6 +63,8 @@
     \end{tabular*}\vspace{-8pt}
 }
 
+\newcommand{\resumeRoleSkills}[1]{\resumeItem{\textbf{Skills:} #1}}
+
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
@@ -103,28 +105,34 @@
       {Software Engineer}{\textcolor{gray}{Jul 2025 -- Present}}
       {@Bytes Maestros, Product-Based}{Stockholm County, Sweden (Remote)}
       \resumeItemListStart
-        \resumeItem{Developed e-commerce platform and B2B SaaS restaurant management system using TypeScript, F\#, and .NET 10 with Clean Architecture, DDD, and event-driven microservices.}
+        \resumeItem{Developed e-commerce platform and B2B SaaS restaurant management system using TypeScript, F\#, and .NET 10 with Clean Architecture, Domain Driven Des.}
         \resumeItem{Built event-sourced systems with NATS JetStream and PostgreSQL event stores using CQRS, implementing event consumers for order management, product catalog, and marketing features.}
         \resumeItem{Developed SvelteKit frontends with TailwindCSS, Storybook, and comprehensive testing. Built RESTful APIs with Oxpecker following schema-first design and Functional Core Imperative Shell pattern.}
         \resumeItem{Designed PostgreSQL databases with Kysely, type-safe migrations, optimistic concurrency control, and multi-tenancy. Implemented observability-first architecture with distributed tracing.}
+        \resumeRoleSkills{C\#, F\#, TypeScript, .NET 10, SvelteKit, PostgreSQL, Kysely, NATS JetStream, Oxpecker, CQRS, Event Sourcing, DDD, TailwindCSS, Storybook, Docker, Vitest, Zod, Serilog}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Backend Developer}{\textcolor{gray}{Nov 2024 -- Jun 2025}}
+      {Backend Developer}{\textcolor{gray}{Oct 2024 -- Jun 2025}}
       {@Techno Island, Software House}{Maadi, Cairo}
       \resumeItemListStart
-        \resumeItem{Developed 9 modules from scratch for \emph{E-Clinic} SaaS and \emph{NewLoanz} banking CRM systems.}
-        \resumeItem{Worked on Transactions Allocation background jobs, Promises to Pay workflow, and integrated APIs for CSV processing and currency exchange rates.}
+        \resumeItem{Developed 3 modules from scratch for the \emph{E-Clinic} SaaS application.}
+        \resumeItem{Developed 6 modules from scratch for the \emph{NewLoanz} third-party banking CRM system.}
+        \resumeItem{Worked on the Transactions Allocation background job and managed the Promises to Pay workflow.}
+        \resumeItem{Integrated the \emph{NewLoanz} API with internal and external jobs to process CSV files from the Core Banking System (CBS).}
+        \resumeItem{Integrated an online API to retrieve daily currency exchange rates.}
         \resumeItem{Analyzed user stories, BRD documents, and Figma designs to gather requirements.}
+        \resumeRoleSkills{C\#, ASP.NET Core, Entity Framework Core, Dapper, SQL Server, Hangfire, REST APIs, LINQ, Git, Docker}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Backend Developer}{\textcolor{gray}{Feb 2023 -- Aug 2024}}
+      {Backend Developer}{\textcolor{gray}{Apr 2023 -- Aug 2024}}
       {@Zellige, Product-Based Startup}{Alexandria, Egypt}
       \resumeItemListStart
         \resumeItem{Designed and developed over 45 features, delivering them to customers.}
         \resumeItem{Refactored and optimized the existing codebase, resolving bugs efficiently.}
         \resumeItem{Conducted end-to-end testing with front-end developers to ensure a seamless user experience.}
+        \resumeRoleSkills{C\#, ASP.NET Core, Entity Framework Core, SQL Server, REST APIs, Git}
       \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -132,6 +140,14 @@
 %-----------PROJECTS-----------
 \section{Projects}
 \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+        {\textbf{Joyzy} $|$ \emph{Freelance Project}
+        \href{https://www.joyzy-pet-shop.com/en}{\faGlobe}}{\textcolor{gray}{Oct 2025 -- Feb 2026}}
+        \resumeItemListStart
+          \resumeItem{Built a full-stack e-commerce platform for a pet accessories brand with a bilingual (Arabic/English, RTL) storefront, cart, checkout, and order confirmation flow.}
+          \resumeItem{Developed admin panel for products, categories, orders, marketing carousel, and delivery settings with sales analytics dashboard. \textit{Technologies: SvelteKit, PostgreSQL, Kysely, TailwindCSS, Better Auth, Paraglide, Storybook, Docker.}}
+        \resumeItemListEnd
 
     \resumeProjectHeading
         {\textbf{Custom Shell} $|$ \emph{Codecrafters Challenge} 
@@ -151,21 +167,21 @@
 \resumeSubHeadingListEnd
 
 %-----------TECHNICAL SKILLS-----------
-\section{Technical Skills}
-\begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Languages}{: C\#, F\#, TypeScript, SQL} \\
-     \textbf{Backend}{: Oxpecker, SvelteKit, ASP.NET Core, .NET 10, Entity Framework Core, Dapper, LINQ } \\
-     \textbf{Frontend}{: Svelte, TailwindCSS, Flowbite, Vite, Google Maps API, Storybook} \\
-     \textbf{Databases}{: Microsoft SQL Server, PostgreSQL, MongoDB} \\
-     \textbf{Event Streaming \& Messaging}{: NATS JetStream, RabbitMQ, MassTransit} \\
-     \textbf{ORM/Query Builders}{: Kysely, Entity Framework Core, Dapper, Npgsql.FSharp} \\
-     \textbf{Methodologies}{: Clean Architecture, DDD, Event Sourcing, CQRS, Functional Core Imperative Shell, OOP, SOLID, RESTful APIs, Schema-First Design, Event-Driven Architecture} \\
-     \textbf{Developer Tools}{: Git, GitHub, Docker, Docker Compose, Azure Boards, Rider, pnpm, Moon Build System} \\
-     \textbf{Testing}{: Expecto, Faqt, Vitest, XUnit} \\
-     \textbf{Libraries \& Tools}{: Hangfire, FluentResults, Zod, Serilog, Sentry, Better Auth, Inlang/Paraglide}
-    }}
-\end{itemize}
+% \section{Technical Skills}
+% \begin{itemize}[leftmargin=0.15in, label={}]
+%     \small{\item{
+%      \textbf{Languages}{: C\#, F\#, TypeScript, SQL} \\
+%      \textbf{Backend}{: Oxpecker, SvelteKit, ASP.NET Core, .NET 10, Entity Framework Core, Dapper, LINQ } \\
+%      \textbf{Frontend}{: Svelte, TailwindCSS, Flowbite, Vite, Google Maps API, Storybook} \\
+%      \textbf{Databases}{: Microsoft SQL Server, PostgreSQL, MongoDB} \\
+%      \textbf{Event Streaming \& Messaging}{: NATS JetStream, RabbitMQ, MassTransit} \\
+%      \textbf{ORM/Query Builders}{: Kysely, Entity Framework Core, Dapper, Npgsql.FSharp} \\
+%      \textbf{Methodologies}{: Clean Architecture, DDD, Event Sourcing, CQRS, Functional Core Imperative Shell, OOP, SOLID, RESTful APIs, Schema-First Design, Event-Driven Architecture} \\
+%      \textbf{Developer Tools}{: Git, GitHub, Docker, Docker Compose, Azure Boards, Rider, pnpm, Moon Build System} \\
+%      \textbf{Testing}{: Expecto, Faqt, Vitest, XUnit} \\
+%      \textbf{Libraries \& Tools}{: Hangfire, FluentResults, Zod, Serilog, Sentry, Better Auth, Inlang/Paraglide}
+%     }}
+% \end{itemize}
 
 %-----------CERTIFICATES-----------
 % \section{Certificates}
